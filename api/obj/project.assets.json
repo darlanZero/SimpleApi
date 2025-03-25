@@ -21,6 +21,15 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Microsoft.EntityFrameworkCore.Design/10.0.0-preview.2.25163.8": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer/10.0.0-preview.2.25163.8": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Tools/10.0.0-preview.2.25163.8": {
+        "type": "package"
+      },
       "Microsoft.OpenApi/1.6.17": {
         "type": "package",
         "compile": {
@@ -30,6 +39,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.SqlServer.Server/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -53,6 +75,62 @@
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Design/10.0.0-preview.2.25163.8": {
+      "sha512": "ebNHZv2TYEFOG857l7PEdEES89SNFTcDnp6WcHZgU9Sbp4cMWsH0IB0GEN5wDSMQOKY95eBfHOqOydsJQ22Rpw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/10.0.0-preview.2.25163.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "build/net10.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.10.0.0-preview.2.25163.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer/10.0.0-preview.2.25163.8": {
+      "sha512": "HeCTBSQWD6UhL8BxLWl3KflaEdf1zdt4cy53zUsdBMb6WLsaefplK/L6wwCB5vFDqagoC46w0w904U7utD19Mw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlserver/10.0.0-preview.2.25163.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
+        "lib/net10.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
+        "microsoft.entityframeworkcore.sqlserver.10.0.0-preview.2.25163.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/10.0.0-preview.2.25163.8": {
+      "sha512": "ev2SnhNX4Oqdkfjk/x73BZmWeVMcbWRzr3jGAfgomIrVf7cJ32ZzzOHyvY4e6RDhC9KyiM5IPjSSHs8Wt0gTuw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/10.0.0-preview.2.25163.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "docs/PACKAGE.md",
+        "microsoft.entityframeworkcore.tools.10.0.0-preview.2.25163.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net10.0/any/ef.dll",
+        "tools/net10.0/any/ef.runtimeconfig.json",
+        "tools/net472/any/ef.exe",
+        "tools/net472/win-arm64/ef.exe",
+        "tools/net472/win-x86/ef.exe"
+      ]
+    },
     "Microsoft.OpenApi/1.6.17": {
       "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
       "type": "package",
@@ -67,11 +145,33 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "Microsoft.SqlServer.Server/1.0.0": {
+      "sha512": "N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug==",
+      "type": "package",
+      "path": "microsoft.sqlserver.server/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnet.png",
+        "lib/net46/Microsoft.SqlServer.Server.dll",
+        "lib/net46/Microsoft.SqlServer.Server.pdb",
+        "lib/net46/Microsoft.SqlServer.Server.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Server.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Server.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Server.xml",
+        "microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+        "microsoft.sqlserver.server.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.OpenApi >= 9.0.3"
+      "Microsoft.AspNetCore.OpenApi >= 9.0.3",
+      "Microsoft.EntityFrameworkCore.Design >= 10.0.0-preview.2.25163.8",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.0-preview.2.25163.8",
+      "Microsoft.EntityFrameworkCore.Tools >= 10.0.0-preview.2.25163.8",
+      "Microsoft.SqlServer.Server >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -127,6 +227,22 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[9.0.3, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "[10.0.0-preview.2.25163.8, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[10.0.0-preview.2.25163.8, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "target": "Package",
+            "version": "[10.0.0-preview.2.25163.8, )"
+          },
+          "Microsoft.SqlServer.Server": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -151,5 +267,25 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Design 10.0.0-preview.2.25163.8 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Microsoft.EntityFrameworkCore.Design 10.0.0-preview.2.25163.8 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 10.0.0-preview.2.25163.8 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Microsoft.EntityFrameworkCore.SqlServer 10.0.0-preview.2.25163.8 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }
