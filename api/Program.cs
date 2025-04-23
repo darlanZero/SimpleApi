@@ -1,5 +1,8 @@
 using api.data;
+using api.interfaces;
+using api.Repository;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +22,16 @@ builder.Services.AddDbContext<ApplicationDBContext>(options => {
     //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddScoped<IStockRepository, StockRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi(
-        
-    );
+    app.MapOpenApi();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/openapi/v1.json", "api | v1"));
+    app.MapScalarApiReference();
 
 }
 

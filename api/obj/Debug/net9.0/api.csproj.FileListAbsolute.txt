@@ -223,3 +223,5 @@ C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\obj\Debug\ne
 C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\obj\Debug\net9.0\api.pdb
 C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\obj\Debug\net9.0\api.genruntimeconfig.cache
 C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\obj\Debug\net9.0\ref\api.dll
+C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\net9.0\Scalar.AspNetCore.dll

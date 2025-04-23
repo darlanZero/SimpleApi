@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4DsJvUFchk4=",
+  "dgSpecHash": "2Ajuf++mkXU=",
   "success": true,
   "projectFilePath": "C:\\Users\\darlan.oliveira\\Documents\\projects\\simpleApi\\SimpleApi\\api\\api.csproj",
   "expectedPackageFiles": [
@@ -54,10 +54,12 @@
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\darlan.oliveira\\.nuget\\packages\\scalar.aspnetcore\\2.1.16\\scalar.aspnetcore.2.1.16.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.10\\sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "C:\\Users\\darlan.oliveira\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\8.1.1\\swashbuckle.aspnetcore.swaggerui.8.1.1.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\darlan.oliveira\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
