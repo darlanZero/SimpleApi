@@ -17,12 +17,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddMvc();
 builder.Services.AddControllers();
 
+builder.Services.AddControllers().AddNewtonsoftJson(opttions => {
+    opttions.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+});
+
 builder.Services.AddDbContext<ApplicationDBContext>(options => {
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
     //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 builder.Services.AddScoped<IStockRepository, StockRepository>();
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 
 var app = builder.Build();
 
