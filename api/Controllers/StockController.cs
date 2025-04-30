@@ -7,6 +7,7 @@ using api.Dtos.Stock;
 using api.Helpers;
 using api.interfaces;
 using api.Mapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.Internal;
@@ -25,7 +26,7 @@ namespace api.Controllers
             _context = context;
         }
 
-        [HttpGet] 
+        [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] QueryObject query )
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);

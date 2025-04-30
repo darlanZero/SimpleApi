@@ -235,3 +235,5 @@ C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\ne
 C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\darlan.oliveira\Documents\projects\simpleApi\SimpleApi\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
