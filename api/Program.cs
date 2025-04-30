@@ -128,25 +128,33 @@ internal sealed class BearerSecuritySchemeTransformer(IAuthenticationSchemeProvi
         var authenticationSchemes = await authenticationSchemeProvider.GetAllSchemesAsync();
         if (authenticationSchemes.Any(authScheme => authScheme.Name == "Bearer"))
         {
-            var requirements = new Dictionary<string, OpenApiSecurityScheme>
+            document.Components ??= new OpenApiComponents();
+
+            // Define o esquema de segurança conforme as configurações do AddSecurityDefinition
+            var bearerScheme = new OpenApiSecurityScheme
             {
-                ["Bearer"] = new OpenApiSecurityScheme
+                Name = "Authorization",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.Http,
+                BearerFormat = "JWT",
+                Scheme = "Bearer", // Igual à definição no SwaggerGen
+                Description = "Please enter a valid token",
+                Reference = new OpenApiReference
                 {
-                    Name = "Authorization",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.Http,
-                    BearerFormat = "JWT",
-                    Scheme = "Bearer", // Alterado para "Bearer" (maiúsculo) para ficar igual à configuração do AddSecurityDefinition
-                    Description = "Please enter a valid token",
-                    Reference = new OpenApiReference
-                    {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer",
-                    }
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
                 }
             };
-            document.Components ??= new OpenApiComponents();
-            document.Components.SecuritySchemes = requirements;
+
+            document.Components.SecuritySchemes["Bearer"] = bearerScheme;
+
+            // Adiciona o requisito de segurança com o array de escopos vazio
+            document.SecurityRequirements ??= new List<OpenApiSecurityRequirement>();
+            var requirement = new OpenApiSecurityRequirement
+            {
+                { bearerScheme, new string[] { } }
+            };
+            document.SecurityRequirements.Add(requirement);
         }
     }
 }
