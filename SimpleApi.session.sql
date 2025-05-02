@@ -1,2 +1,17 @@
-INSERT INTO Comments (Title, Content, CreatedOn, StockId)
-VALUES ('Just a fair review', 'Needs To do better', 02-02-1990, 4);
+
+INSERT INTO Stocks (
+    Symbol,
+    CompanyName,
+    Purchase,
+    LastDiv,
+    Industry,
+    MarketCap
+  )
+VALUES (
+    
+    'XM',
+    'Xiaomi Corp',
+    '20.00',
+    '483829221',
+    'Technology',
+    1000000000  )

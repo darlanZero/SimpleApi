@@ -102,6 +102,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IPorfolioRepository, PorfolioRepository>();
 
 var app = builder.Build();
 
@@ -109,7 +110,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/openapi.json", "api | v1"));
+    app.UseSwaggerUI();
     app.MapScalarApiReference();
 
 }
